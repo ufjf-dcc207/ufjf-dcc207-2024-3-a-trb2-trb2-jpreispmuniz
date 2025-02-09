@@ -1,5 +1,5 @@
 import { useState, ChangeEvent } from "react";
-import "./GerenciamentoProduto.css";
+import "./GerenciamentoProdutos.css";
 import Table from "../../components/Table";
 import Input from "../../components/Input";
 
