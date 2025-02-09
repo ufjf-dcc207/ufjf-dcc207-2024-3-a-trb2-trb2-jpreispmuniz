@@ -18,12 +18,6 @@ const Home = () => {
         <button onClick={() => handleNavigation("/gerenciamento-produtos")}>
           Gerenciamento de Produtos
         </button>
-        <button onClick={() => handleNavigation("/lancamento-venda")}>
-          Lançamento de Venda
-        </button>
-        <button onClick={() => handleNavigation("/relatorios-gerenciais")}>
-          Relatórios Gerenciais
-        </button>
       </div>
     </div>
   );
