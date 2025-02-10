@@ -4,7 +4,6 @@ import Table from "../../components/Table";
 import Input from "../../components/Input";
 
 interface Vendedor {
-  id: string;
   nome: string;
   uf: string;
   cpf: string;
@@ -12,7 +11,6 @@ interface Vendedor {
 
 const CadastroVendedor: React.FC = () => {
   const [dados, setDados] = useState<Vendedor>({
-    id: "",
     nome: "",
     uf: "",
     cpf: "",
@@ -50,10 +48,7 @@ const CadastroVendedor: React.FC = () => {
       setErrorMessage(validationError);
       return;
     }
-    setVendedores((prevVendedores) => [
-      ...prevVendedores,
-      { ...dados, id: Date.now().toString() },
-    ]);
+    setVendedores((prevVendedores) => [...prevVendedores, { ...dados }]);
     setSuccessMessage("Cadastro realizado com sucesso!");
   };
 

@@ -7,7 +7,6 @@ interface Produto {
   nome: string;
   quantidade: string;
   valUnitario: string;
-  inativo: number;
 }
 
 const GerenciamentoProduto = () => {
@@ -15,7 +14,6 @@ const GerenciamentoProduto = () => {
     nome: "",
     quantidade: "",
     valUnitario: "",
-    inativo: 0,
   });
 
   const [errorMessage, setErrorMessage] = useState<string>("");
